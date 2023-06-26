@@ -1,8 +1,17 @@
-const io = require("socket.io")(8900,{
-    cors:{
-        origin:"https://dhanush-minisocialmedia.onrender.com"
-    }
-});
+// const io = require("socket.io")(8900,{
+//     cors:{
+//         origin:"https://dhanush-minisocialmedia.onrender.com"
+//     }
+// });
+
+
+const io = require('socket.io')(https, {
+    cors: {
+        origin:"https://dhanush-minisocialmedia.onrender.com",
+      methods: ['GET', 'POST'],
+      allowedHeaders: ['Content-Type', 'Authorization'],
+    },
+  });
 
 
 let users = []
