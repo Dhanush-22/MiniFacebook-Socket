@@ -5,7 +5,7 @@
 // });
 
 
-const io = require('socket.io')(https, {
+const io = require('socket.io')(8900, {
     cors: {
         origin:"https://dhanush-minisocialmedia.onrender.com",
       methods: ['GET', 'POST'],
